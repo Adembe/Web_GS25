@@ -1,6 +1,6 @@
 class header extends HTMLElement {
-        connectedCallback() {
-                this.parentNode.innerHTML = `
+  connectedCallback() {
+    this.parentNode.innerHTML = `
                 <nav class="navigation-menu">
                         <section class="header-logo">
                                 <a href="index.html">
@@ -21,14 +21,14 @@ class header extends HTMLElement {
                         </div>
                 </nav>
                 `;
-        }
+  }
 }
 
 customElements.define("gs25-header", header);
 
 class footer extends HTMLElement {
-        connectedCallback() {
-                this.parentNode.innerHTML = `
+  connectedCallback() {
+    this.parentNode.innerHTML = `
                         <article class="footer-all-menu">
                                 <section class="footer-main-menu footer-col">
                                 <ul>
@@ -95,6 +95,6 @@ class footer extends HTMLElement {
                                 <p>Copyright &copy2022 Digital Concept. All Rights Reserved</p>
                         </section>
                 `;
-        }
+  }
 }
 customElements.define("gs25-footer", footer);
