@@ -68,31 +68,31 @@ const ProductCardData = [{
         alt: "chicken",
         name: "Chicken25 /sauce/",
         price: "4,900₮",
-    },
-    {
-        src: "img/product-img/product-pepsi1.webp",
-        alt: "pepsi",
-        name: "Pepsi аягатай",
-        price: "1,600₮",
-    },
-    {
-        src: "img/product-img/product-coffee1.webp",
-        alt: "coffee",
-        name: "Кафе25 Aмерикано",
-        price: "3,500₮",
-    },
-    {
-        src: "img/product-img/product-mantuunbuuz1.webp",
-        alt: "mantuu",
-        name: "Мантуун бууз / кимчи /",
-        price: "1,800₮",
-    },
-    {
-        src: "img/product-img/product-boortsog.webp",
-        alt: "mantuu",
-        name: "Боорцог / мушгиа /",
-        price: "1,000₮",
-    },
+    }
+    // {
+    //     src: "img/product-img/product-pepsi1.webp",
+    //     alt: "pepsi",
+    //     name: "Pepsi аягатай",
+    //     price: "1,600₮",
+    // },
+    // {
+    //     src: "img/product-img/product-coffee1.webp",
+    //     alt: "coffee",
+    //     name: "Кафе25 Aмерикано",
+    //     price: "3,500₮",
+    // },
+    // {
+    //     src: "img/product-img/product-mantuunbuuz1.webp",
+    //     alt: "mantuu",
+    //     name: "Мантуун бууз / кимчи /",
+    //     price: "1,800₮",
+    // },
+    // {
+    //     src: "img/product-img/product-boortsog.webp",
+    //     alt: "mantuu",
+    //     name: "Боорцог / мушгиа /",
+    //     price: "1,000₮",
+    // }
 ];
 
 const ProductCardList = [{
@@ -148,7 +148,7 @@ const ProductCardList = [{
         alt: "mantuu",
         name: "Боорцог / мушгиа /",
         price: "1,000₮",
-    },
+    }
 ];
 // Uramshuulaltai buteegdehuuniih
 
