@@ -227,6 +227,5 @@ const ProductBonusCardData = [{
 
 window.onload = () => {
     App(ProductCardData, "product-cards");
-    //     App(ProductCardList, "product-list");
     AppBonus(ProductBonusCardData, "product-bonus-cards");
 };
