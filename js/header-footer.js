@@ -29,7 +29,6 @@ customElements.define("gs25-header", header);
 class footer extends HTMLElement {
         connectedCallback() {
                 this.parentNode.innerHTML = `
-                <div class="footer-logo" style="background-image:url('./img/gs25-footer.webp');"></div>
                         <article class="footer-all-menu">
                                 <section class="footer-main-menu footer-col">
                                 <ul>
@@ -81,13 +80,13 @@ class footer extends HTMLElement {
                                         </section>
                                         <section class="social">
                                                 <a href="https://www.facebook.com/gs25mn" arial-label="Facebook" target="_blank">
-                                                        <div class="icon" style="background-image: url('img/social-icon-fb.webp');"></div>
+                                                        <img src="./img/social-icon-fb.webp" alt="apple-app-store" width="100px" height="100px">
                                                 </a>
                                                 <a href="https://www.instagram.com/gs25mn/" arial-label="Instagram" target="_blank">
-                                                        <div class="icon" style="background-image: url('img/social-icon-ig.webp');"></div>
+                                                        <img src="./img/social-icon-ig.webp" alt="apple-app-store" width="100px" height="100px">
                                                 </a>
                                                 <a href="https://www.youtube.com/channel/UCNZRSkhwGeT-NkjDtlj0CHg" arial-label="Youtube" target="_blank">
-                                                        <div class="icon" style="background-image: url('img/social-icon-yt.webp');"></div>
+                                                        <img src="../img/social-icon-yt.webp" alt="apple-app-store" width="100px" height="100px">
                                                 </a>
                                         </section>
                                 </section>
