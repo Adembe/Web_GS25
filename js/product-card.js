@@ -1,12 +1,12 @@
 class ProductCardItem {
-    constructor(src, alt, name, price) {
-        this.src = src;
-        this.alt = alt;
-        this.name = name;
-        this.price = price;
-    }
-    render1() {
-        return `
+  constructor(src, alt, name, price) {
+    this.src = src;
+    this.alt = alt;
+    this.name = name;
+    this.price = price;
+  }
+  render1() {
+    return `
                 <div class="product-card">
                         <div class="product-card-img-container">
                                 <img src="${this.src}" alt="${this.alt}" width="180px" height="180px">
@@ -19,24 +19,24 @@ class ProductCardItem {
                         </div>
                 </div>
                 `;
-    }
+  }
 }
 
 function App(datas, targetElement) {
-    let retVal = "";
+  let retVal = "";
 
-    for (const data of datas) {
-        let productObj = new ProductCardItem(
-            data.src,
-            data.alt,
-            data.name,
-            data.price
-        );
-        retVal += productObj.render1();
-    }
-    document
-        .getElementsByClassName(targetElement)[0]
-        .insertAdjacentHTML("beforeend", retVal);
+  for (const data of datas) {
+    let productObj = new ProductCardItem(
+      data.src,
+      data.alt,
+      data.name,
+      data.price
+    );
+    retVal += productObj.render1();
+  }
+  document
+    .getElementsByClassName(targetElement)[0]
+    .insertAdjacentHTML("beforeend", retVal);
 }
 
 const ProductCardData = [{
@@ -68,14 +68,14 @@ const ProductCardData = [{
 // Uramshuulaltai buteegdehuuniih
 
 class ProductBonusCardItem {
-    constructor(src, alt, name, price) {
-        this.src = src;
-        this.alt = alt;
-        this.name = name;
-        this.price = price;
-    }
-    render() {
-        return `
+  constructor(src, alt, name, price) {
+    this.src = src;
+    this.alt = alt;
+    this.name = name;
+    this.price = price;
+  }
+  render() {
+    return `
                 <div class="product-bonus-card">
                         <div class="product-bonus-card-img-container">
                                 <img src="${this.src}" alt="${this.alt}" width="180px" height="180px">
@@ -88,59 +88,60 @@ class ProductBonusCardItem {
                         </div>                
                 </div>
                 `;
-    }
+  }
 }
 
 function AppBonus(bonusDatas, targetBonusElement) {
-    let retBonusVal = "";
+  let retBonusVal = "";
 
-    for (const data of bonusDatas) {
-        let productBonusObj = new ProductBonusCardItem(
-            data.src,
-            data.alt,
-            data.name,
-            data.price
-        );
-        retBonusVal += productBonusObj.render();
-    }
-    document
-        .getElementsByClassName(targetBonusElement)[0]
-        .insertAdjacentHTML("beforeend", retBonusVal);
+  for (const data of bonusDatas) {
+    let productBonusObj = new ProductBonusCardItem(
+      data.src,
+      data.alt,
+      data.name,
+      data.price
+    );
+    retBonusVal += productBonusObj.render();
+  }
+  document
+    .getElementsByClassName(targetBonusElement)[0]
+    .insertAdjacentHTML("beforeend", retBonusVal);
 }
 
-const ProductBonusCardData = [{
-        src: "img/product-img/product-bonus-chips1.webp",
-        alt: "chips",
-        name: "Чипс Realprice эрдэнэшиштэй",
-        price: "7,900₮",
-    },
-    {
-        src: "img/product-img/product-hotdog2.webp",
-        alt: "chocopie",
-        name: "Чокопай Crown гүзээлзгэнэтэй",
-        price: "9,500₮",
-    },
-    {
-        src: "img/product-img/product-bonus-drink1.webp",
-        alt: "juice",
-        name: "Жүүс YouUs Алим 330Мл",
-        price: "1,400₮",
-    },
-    {
-        src: "img/product-img/product-bonus-water.webp",
-        alt: "water",
-        name: "Ус Aqua Se 500Мл",
-        price: "9,500₮",
-    },
-    {
-        src: "img/product-img/product-bonus-honey.webp",
-        alt: "honey",
-        name: "Халбага зөгийн бал 10Гр",
-        price: "1,600₮",
-    },
+const ProductBonusCardData = [
+  {
+    src: "img/product-img/product-bonus-chips1.webp",
+    alt: "chips",
+    name: "Чипс Realprice эрдэнэшиштэй",
+    price: "7,900₮",
+  },
+  {
+    src: "img/product-img/product-hotdog2.webp",
+    alt: "chocopie",
+    name: "Чокопай Crown гүзээлзгэнэтэй",
+    price: "9,500₮",
+  },
+  {
+    src: "img/product-img/product-bonus-drink1.webp",
+    alt: "juice",
+    name: "Жүүс YouUs Алим 330Мл",
+    price: "1,400₮",
+  },
+  {
+    src: "img/product-img/product-bonus-water.webp",
+    alt: "water",
+    name: "Ус Aqua Se 500Мл",
+    price: "9,500₮",
+  },
+  {
+    src: "img/product-img/product-bonus-honey.webp",
+    alt: "honey",
+    name: "Халбага зөгийн бал 10Гр",
+    price: "1,600₮",
+  },
 ];
 
 window.onload = () => {
-    App(ProductCardData, "product-cards");
-    AppBonus(ProductBonusCardData, "product-bonus-cards");
+  App(ProductCardData, "product-cards");
+  AppBonus(ProductBonusCardData, "product-bonus-cards");
 };

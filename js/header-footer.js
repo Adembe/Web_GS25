@@ -24,16 +24,16 @@ customElements.define("gs25-header", header);
 class footer extends HTMLElement {
         connectedCallback() {
                 this.parentNode.innerHTML = `
-                        <article class="footer-all-menu">
+                <article class="footer-all-menu">
                         <section class="footer-main-menu footer-col">
-                        <ul>
-                                <li><h4>ҮНДСЭН ЦЭС</h4></li>
-                                <li><a href="#">Нүүр хуудас</a></li>
-                                <li><a href="product.html">Бүтээгдэхүүн</a></li>
-                                <li><a href="location.html">Байршил</a></li>
-                                <li><a href="hr.html">Хүний нөөц</a></li>
-                                <li><a href="about.html">Бидний тухай</a></li>
-                        </ul>
+                                <ul>
+                                        <li><h4>ҮНДСЭН ЦЭС</h4></li>
+                                        <li><a href="#">Нүүр хуудас</a></li>
+                                        <li><a href="product.html">Бүтээгдэхүүн</a></li>
+                                        <li><a href="location.html">Байршил</a></li>
+                                        <li><a href="hr.html">Хүний нөөц</a></li>
+                                        <li><a href="about.html">Бидний тухай</a></li>
+                                </ul>
                         </section>
                         <section class="footer-products footer-col">
                                 <ul>
