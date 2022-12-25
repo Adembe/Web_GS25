@@ -86,7 +86,7 @@ class footer extends HTMLElement {
                                                         <img src="./img/social-icon-ig.webp" alt="apple-app-store" width="100px" height="100px">
                                                 </a>
                                                 <a href="https://www.youtube.com/channel/UCNZRSkhwGeT-NkjDtlj0CHg" arial-label="Youtube" target="_blank">
-                                                        <img src="../img/social-icon-yt.webp" alt="apple-app-store" width="100px" height="100px">
+                                                        <img src="./img/social-icon-yt.webp" alt="apple-app-store" width="100px" height="100px">
                                                 </a>
                                         </section>
                                 </section>

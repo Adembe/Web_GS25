@@ -28,351 +28,76 @@
 
   <body>
     <header>
-      <div class="navigation">
-        <div>
-          <a href="index.html">
-            <img
-              src="./img/gs25-logo.webp"
-              alt="GS25 Logo"
-              width="70"
-              height="40"
-            />
-          </a>
-        </div>
-        <nav class="navigation-menu">
-          <ul>
-            <li class="nav-item"><a href="index.html">Нүүр хуудас</a></li>
-            <li class="nav-item"><a href="product.html">Бүтээгдэхүүн</a></li>
-            <li class="nav-item"><a href="location.html">Байршил</a></li>
-            <li class="nav-item"><a href="hr.html">Хүний нөөц</a></li>
-            <li class="nav-item"><a href="about.html">Бидний тухай</a></li>
-          </ul>
-        </nav>
-      </div>
+      <gs25-header></gs25-header>
     </header>
     <main>
-      <div>
+      <section class="heading-product">
+        <h3 style="display: none">.</h3>
         <div>
-          <h3>УРАМШУУЛАЛ</h3>
+          <h3 class="cat-title">УРАМШУУЛАЛ</h3>
         </div>
         <div>
-          <ul>
-            <li>1+1</li>
-            <li>2+1</li>
-            <li>Хямдрал</li>
-            <li>Бэлэгтэй</li>
+          <ul class="list">
+            <li class="cat-list1">
+              <a href="#" class="cat-list-active">1+1</a>
+            </li>
+            <li class="cat-list1">
+              <a href="#" class="cat-list-active">2+1</a>
+            </li>
+            <li class="cat-list2">
+              <a href="#" class="cat-list-active">Хямдрал %</a>
+            </li>
+            <li class="cat-list2">
+              <a href="#" class="cat-list-active">Бэлэгтэй</a>
+            </li>
           </ul>
         </div>
-      </div>
-      <div>
-        <div class="search-container">
-          <form action="/action_page.php">
-            <input type="text" placeholder="Search.." name="search" />
-            <button type="submit">Search</button>
-          </form>
-        </div>
-        <div>
+      </section>
+      <section class="products-allcategory">
+        <h3 style="display: none">.</h3>
+        <section class="products-category">
+          <h3 style="display: none">.</h3>
           <ul>
-            <li>Бүх</li>
-            <li>Бэлэн Бүтээгдэхүүн</li>
-            <li>Шингэн Бүтээгдэхүүн</li>
-            <li>Амттан</li>
-            <li>Түргэн Хоол</li>
-            <li>Ахуйн Бараа</li>
+            <li>
+              <a href="#" class="product-list-cat"> <img src="#" alt />Бүх</a>
+            </li>
+            <li>
+              <a href="#" class="product-list-cat">
+                <img src="#" alt />Бэлэн бүтээгдэхүүн
+              </a>
+            </li>
+            <li>
+              <a href="#" class="product-list-cat"
+                ><img src="#" alt />Шингэн Бүтээгдэхүүн</a
+              >
+            </li>
+            <li>
+              <a href="#" class="product-list-cat"><img src="#" alt />Амттан</a>
+            </li>
+            <li>
+              <a href="#" class="product-list-cat"
+                ><img src="#" alt />Түргэн Хоол</a
+              >
+            </li>
+            <li>
+              <a href="#" class="product-list-cat"
+                ><img src="#" alt />Ахуйн Бараа</a
+              >
+            </li>
           </ul>
-        </div>
-      </div>
-      <!-- <div>
-            <article class="product-cards"></article>
-        </div> -->
-      <div>
-        <article>
-          <a href="#">
-            <div>
-              <img
-                src="/Web_GS25/img/product-img/product-bonus-chips1.webp"
-                alt="#"
-              />
-            </div>
-            <h4>Кимбаб</h4>
-            <div>3700₮</div>
-          </a>
-        </article>
-        <article>
-          <a href="#">
-            <div>
-              <img
-                src="/Web_GS25/img/product-img/product-bonus-chocopie1.webp"
-                alt="#"
-              />
-            </div>
-            <h5>Үхрийн махтай онигири</h5>
-            <div>2300₮</div>
-          </a>
-        </article>
-        <article>
-          <a href="#">
-            <div>
-              <img
-                src="/Web_GS25/img/product-img/product-bonus-drink1.webp"
-                alt="#"
-              />
-            </div>
-            <h5>Chicken25 /org/</h5>
-            <div>4900₮</div>
-          </a>
-        </article>
-        <article>
-          <a href="#">
-            <div>
-              <img
-                src="/Web_GS25/img/product-img/product-bonus-honey.webp"
-                alt="#"
-              />
-            </div>
-            <h5>Chicken25 /org/ box</h5>
-            <div>22000₮</div>
-          </a>
-        </article>
-        <article>
-          <a href="#">
-            <div>
-              <img
-                src="/Web_GS25/img/product-img/product-bonus-water.webp"
-                alt="#"
-              />
-            </div>
-            <h5>Хотдог</h5>
-            <div>3000₮</div>
-          </a>
-        </article>
-        <article>
-          <a href="#">
-            <div>
-              <img
-                src="/Web_GS25/img/product-img/product-boortsog.webp"
-                alt="#"
-              />
-            </div>
-            <h5>Боорцог</h5>
-            <div>2000₮</div>
-          </a>
-        </article>
-        <article>
-          <a href="#">
-            <div>
-              <img
-                src="/Web_GS25/img/product-img/product-chicken1.webp"
-                alt="#"
-              />
-            </div>
-            <h5>Тахиа / энгийн</h5>
-            <div>4500₮</div>
-          </a>
-        </article>
-        <article>
-          <a href="#">
-            <div>
-              <img
-                src="/Web_GS25/img/product-img/product-chicken2.webp"
-                alt="#"
-              />
-            </div>
-            <h5>Тахиа / халуун ногоотой</h5>
-            <div>4800₮</div>
-          </a>
-        </article>
-        <article>
-          <a href="#">
-            <div>
-              <img
-                src="/Web_GS25/img/product-img/product-chicken3.webp"
-                alt="#"
-              />
-            </div>
-            <h5>Тахиа / сийртэй</h5>
-            <div>4800₮</div>
-          </a>
-        </article>
-        <article>
-          <a href="#">
-            <div>
-              <img
-                src="/Web_GS25/img/product-img/product-coffee1.webp"
-                alt="#"
-              />
-            </div>
-            <h5>Americano</h5>
-            <div>7000₮</div>
-          </a>
-        </article>
-        <article>
-          <a href="#">
-            <div>
-              <img
-                src="/Web_GS25/img/product-img/product-hotdog1.webp"
-                alt="#"
-              />
-            </div>
-            <h5>Хотдог</h5>
-            <div>3400₮</div>
-          </a>
-        </article>
-      </div>
+        </section>
+        <section>
+          <h3 style="display: none">.</h3>
+          <article class="product-cards">
+            <h3 style="display: none">.</h3>
+          </article>
+        </section>
+      </section>
     </main>
     <footer>
-      <div class="footer">
-        <div class="footer-logo">
-          <picture>
-            <img
-              src="img/gs25-footer.webp"
-              alt="gs25-footer"
-              width="1440"
-              height="612"
-            />
-          </picture>
-        </div>
-        <article class="footer-all-menu">
-          <div class="footer-main-menu">
-            <ul>
-              <li>
-                <h4>ҮНДСЭН ЦЭС</h4>
-              </li>
-              <li><a href="#">Нүүр хуудас</a></li>
-              <li><a href="product.html">Бүтээгдэхүүн</a></li>
-              <li><a href="location.html">Байршил</a></li>
-              <li><a href="hr.html">Хүний нөөц</a></li>
-              <li><a href="about.html">Бидний тухай</a></li>
-            </ul>
-          </div>
-          <div class="footer-products">
-            <ul>
-              <li>
-                <h4>БҮТЭЭГДЭХҮҮН</h4>
-              </li>
-              <li><a href="#">Бүх бүтээгдэхүүн</a></li>
-              <li><a href="#">Бэлэн бүтээгдэхүүн</a></li>
-              <li><a href="#">Амттан</a></li>
-              <li><a href="#">Шингэн хүнс</a></li>
-              <li><a href="#">Ахуйн бараа</a></li>
-              <li><a href="#">Түргэн хоолнууд</a></li>
-              <li><a href="#">Урамшуулалтай бүтээгдэхүүн</a></li>
-            </ul>
-          </div>
-          <div class="footer-address">
-            <ul>
-              <li>
-                <h4>ХАЯГ</h4>
-              </li>
-              <li>
-                GS25 Mongolia Distribution Center<br />18-р хороо, Хан-Уул
-                дүүрэг
-              </li>
-              <li>
-                <address>
-                  <a href="mailto:info@digitalconcept.mn"
-                    >info@digitalconcept.mn</a
-                  ><a href="tel:+97676092525">+976 76092525</a>
-                </address>
-              </li>
-              <li>
-                <address>
-                  <a href="tel:+97676092525">+976 76092525</a>
-                </address>
-              </li>
-            </ul>
-          </div>
-          <div class="footer-contact">
-            <h4>ХОЛБОГДОХ</h4>
-            <form action="#" method="get">
-              <label for="feedback_type">Төрөл</label>
-              <input
-                type="text"
-                name="type"
-                id="feedback_type"
-                placeholder="Хамтран ажиллах"
-              />
-              <div>
-                <label for="feedback_email">Имейл</label>
-                <input
-                  type="email"
-                  name="mail"
-                  id="feedback_email"
-                  placeholder="example@gmail.com"
-                />
-                <label for="feedback_phone">Утас</label>
-                <input
-                  type="tel"
-                  name="phone"
-                  id="feedback_phone"
-                  placeholder="99123456"
-                />
-              </div>
-              <label for="feedback_comment">Сэтгэгдэл</label>
-              <textarea
-                name="comment"
-                id="feedback_comment"
-                cols="30"
-                rows="10"
-              ></textarea>
-              <input
-                class="feedback_send"
-                type="submit"
-                value="Илгээх"
-                onclick=""
-              />
-            </form>
-          </div>
-        </article>
-        <div class="footer-app-social">
-          <div class="app-download">
-            <p>GS25 АПП ТАТАХ</p>
-            <a href="https://apps.apple.com/us/app/gs25mn/id1562621269?uo=4">
-              <img
-                src="./img/apple-app-store.png"
-                alt="apple-app-store"
-                width="140"
-                height="42"
-              />
-            </a>
-            <a
-              href="https://play.google.com/store/apps/details?id=mn.infinite.gs25&pli=1"
-            >
-              <img
-                src="./img/google-play-store.png"
-                alt="google-play-store"
-                width="140"
-                height="42"
-              />
-            </a>
-          </div>
-          <div class="social">
-            <a href="https://www.facebook.com/gs25mn">
-              <img
-                src="img/facebook-icon.svg"
-                alt="fb"
-                width="30"
-                height="30"
-              />
-            </a>
-            <a href="https://www.instagram.com/gs25mn/">
-              <img
-                src="img/instagram-icon.svg"
-                alt="fb"
-                width="30"
-                height="30"
-              />
-            </a>
-            <a href="https://www.youtube.com/channel/UCNZRSkhwGeT-NkjDtlj0CHg">
-              <img src="img/youtube-icon.svg" alt="fb" width="30" height="30" />
-            </a>
-          </div>
-        </div>
-        <div class="copyright">
-          <span>&copy;</span>
-          <p>Created By Mega 2022</p>
-        </div>
-      </div>
+      <gs25-footer></gs25-footer>
     </footer>
+    <script src="js/header-footer.js"></script>
+    <script src="js/all-product-card.js"></script>
   </body>
 </html>
