@@ -1,6 +1,6 @@
 class header extends HTMLElement {
-        connectedCallback() {
-                this.parentNode.innerHTML = `
+  connectedCallback() {
+    this.parentNode.innerHTML = `
                         <nav>
                                 <section>
                                         <a href="index.html">
@@ -16,14 +16,14 @@ class header extends HTMLElement {
                                 </ul>
                         </nav>
                 `;
-        }
+  }
 }
 
 customElements.define("gs25-header", header);
 
 class footer extends HTMLElement {
-        connectedCallback() {
-                this.parentNode.innerHTML = `
+  connectedCallback() {
+    this.parentNode.innerHTML = `
                 <article class="footer-all-menu">
                         <section class="footer-main-menu footer-col">
                                 <ul>
@@ -81,7 +81,7 @@ class footer extends HTMLElement {
                                                 <img src="./img/social-icon-ig.webp" alt="apple-app-store" width="100" height="100">
                                         </a>
                                         <a href="https://www.youtube.com/channel/UCNZRSkhwGeT-NkjDtlj0CHg">
-                                                <img src="../img/social-icon-yt.webp" alt="apple-app-store" width="100" height="100">
+                                                <img src="./img/social-icon-yt.webp" alt="apple-app-store" width="100" height="100">
                                         </a><h3 style="display: none;">.</h3>
                                 </section>
                                 <h3 style="display: none;">.</h3>
@@ -91,6 +91,6 @@ class footer extends HTMLElement {
                         <h5>Copyright &copy;2022 Digital Concept. All Rights Reserved</h5>
                 </section>
                 `;
-        }
+  }
 }
 customElements.define("gs25-footer", footer);
