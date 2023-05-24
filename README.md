@@ -1,1 +1,1 @@
-https://megg01.github.io/gs25/
+Web gs25 site
